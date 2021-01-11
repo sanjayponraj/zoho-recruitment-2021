@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <script>
+    function pattern(){
+    var m,n, count = document.getElementById('inp').value;
+    for (m = count; m >= 1; m--) {
+    for (n = count; n >= 1; n--) {
+        if(n>m){
+        document.write(""+n+" ");
+        }
+    }
+    for(k=0;k<m;k++){
+    document.write(""+m+" ");
+    }
+    document.write('<br/>');
+    }
+}
+    </script>
+    </head>
+    <body>
+        Input: <input id='inp'/>
+        <button onclick="pattern()">Submit</button>
+    </body>
+</html>
